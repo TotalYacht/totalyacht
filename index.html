@@ -1,18 +1,407 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Total Yacht</title>
+<title>Total Yacht | Para tu embarcación, solo lo mejor.</title>
+
+<meta name="description" content="Total Yacht ofrece repuestos, accesorios y soluciones especializadas para embarcaciones deportivas y de recreo en Venezuela.">
+<meta name="keywords" content="repuestos náuticos Venezuela, accesorios náuticos, mantenimiento de embarcaciones, pesca deportiva, yates Venezuela">
+<meta name="author" content="Total Yacht">
+
+<style>
+:root{
+    --navy:#0d2b6b;
+    --blue:#1d5dbf;
+    --turquoise:#00c8e8;
+    --white:#ffffff;
+    --light:#f5f7fa;
+    --dark:#1a1a1a;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    color:var(--dark);
+    line-height:1.6;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    background:rgba(13,43,107,.95);
+    padding:15px 30px;
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+    margin:0;
+    padding:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.logo{
+    height:60px;
+}
+
+.hero{
+    min-height:100vh;
+    background:
+        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+        url('hero.jpg');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    padding:120px 20px 60px;
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+.hero h1{
+    font-size:3.5rem;
+    margin-bottom:10px;
+}
+
+.hero h2{
+    font-weight:300;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 28px;
+    margin:10px;
+    border-radius:6px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.btn-primary{
+    background:var(--turquoise);
+    color:white;
+}
+
+.btn-secondary{
+    background:white;
+    color:var(--navy);
+}
+
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    color:var(--navy);
+    margin-bottom:40px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:var(--light);
+    padding:30px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.highlight{
+    background:var(--navy);
+    color:white;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+form input,
+form textarea{
+    width:100%;
+    padding:14px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+form button{
+    background:var(--blue);
+    color:white;
+    border:none;
+    padding:15px 30px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+footer{
+    background:var(--navy);
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px 20px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    z-index:1000;
+}
+
+.language{
+    color:white;
+    font-size:.9rem;
+}
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:2.5rem;
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+
 </head>
 
 <body>
 
+<header>
+<nav>
+    <img src="logo.png" alt="Total Yacht" class="logo">
+
+```
+<ul>
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#nosotros">Nosotros</a></li>
+    <li><a href="#servicios">Soluciones</a></li>
+    <li><a href="#proximamente">Próximamente</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+</ul>
+
+<div class="language">
+    ES / EN
+</div>
+```
+
+</nav>
+</header>
+
+<section class="hero" id="inicio">
+
+<div class="hero-content">
+
 <h1>TOTAL YACHT</h1>
+
+<h2>Para tu embarcación, solo lo mejor.</h2>
+
+<p>
+Repuestos, accesorios y soluciones especializadas para embarcaciones deportivas y de recreo.
+</p>
+
+<a class="btn btn-primary"
+href="#contacto">
+Solicitar Información </a>
+
+<a class="btn btn-secondary"
+href="https://wa.me/584142493862?text=Hola,%20me%20gustaría%20recibir%20información%20sobre%20los%20productos%20y%20servicios%20de%20Total%20Yacht."
+target="_blank">
+WhatsApp </a>
+
+</div>
+
+</section>
+
+<section id="nosotros">
+
+<h2 class="section-title">Quiénes Somos</h2>
+
+<p>
+En Total Yacht trabajamos para ofrecer productos, repuestos y soluciones especializadas para propietarios de embarcaciones deportivas y de recreo.
+</p>
+
+<p>
+Nuestra filosofía está basada en la responsabilidad, honestidad y excelencia, brindando asesoría confiable para mantener cada embarcación en óptimas condiciones.
+</p>
+
+</section>
+
+<section id="servicios">
+
+<h2 class="section-title">Soluciones Total Yacht</h2>
+
+<div class="cards">
+
+<div class="card">
+⚓
+<h3>Repuestos Marinos</h3>
+<p>Productos seleccionados para ambientes marinos.</p>
+</div>
+
+<div class="card">
+⚓
+<h3>Accesorios Náuticos</h3>
+<p>Equipamiento confiable para navegación y confort.</p>
+</div>
+
+<div class="card">
+⚓
+<h3>Pesca Deportiva</h3>
+<p>Accesorios y soluciones para los amantes de la pesca.</p>
+</div>
+
+<div class="card">
+⚓
+<h3>Mantenimiento</h3>
+<p>Productos orientados al cuidado preventivo.</p>
+</div>
+
+<div class="card">
+⚓
+<h3>Asesoría Técnica</h3>
+<p>Orientación especializada para propietarios.</p>
+</div>
+
+<div class="card">
+⚓
+<h3>Recomendaciones</h3>
+<p>Consejos prácticos para prolongar la vida útil de tu embarcación.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="highlight" id="proximamente">
+
+<h2 class="section-title" style="color:white;">
+Próximamente
+</h2>
+
+<p style="text-align:center; max-width:900px; margin:auto;">
+Estamos desarrollando una plataforma que permitirá comprar productos en línea, gestionar mantenimientos preventivos, consultar historial de compras y recibir recomendaciones personalizadas para cada embarcación.
+</p>
+
+</section>
+
+<section id="contacto">
+
+<h2 class="section-title">Contáctanos</h2>
+
+<div class="contact-grid">
+
+<div>
+
+<h3>Información de Contacto</h3>
+
+<p><strong>Email:</strong> ventas@totalyacht.net</p>
+
+<p><strong>Teléfono:</strong> +58 212 975 4602</p>
+
+<p><strong>WhatsApp:</strong> +58 414 249 3862</p>
+
+<p><strong>Instagram:</strong> @totalyacht</p>
+
+<p><strong>X:</strong> @totalyacht</p>
+
+</div>
+
+<div>
+
+<form action="https://formspree.io/f/xvznbapz" method="POST">
+
+<input type="text" name="nombre" placeholder="Nombre" required>
+
+<input type="email" name="email" placeholder="Correo Electrónico" required>
+
+<input type="tel" name="telefono" placeholder="Teléfono">
+
+<input type="text" name="embarcacion" placeholder="Tipo de embarcación">
+
+<textarea name="mensaje" rows="5" placeholder="¿Cómo podemos ayudarte?" required></textarea>
+
+<button type="submit">
+Enviar Solicitud
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p><strong>TOTAL YACHT</strong></p>
 
 <p>Para tu embarcación, solo lo mejor.</p>
 
-<p>ventas@totalyacht.net</p>
+<p>© 2025 Total Yacht. Todos los derechos reservados.</p>
+
+</footer>
+
+<a class="whatsapp"
+href="https://wa.me/584142493862?text=Hola,%20me%20gustaría%20recibir%20información%20sobre%20Total%20Yacht."
+target="_blank">
+
+WhatsApp
+
+</a>
 
 </body>
 </html>
